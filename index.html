@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href= "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <script src= "https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class = "headerContainer">
+        <div class = "flex2">
+            <div class = "left">
+                <h2>Sunrise</h1>
+                <div class = "sunrise"></div>
+                <img src= "./icons/sunrise.png" alt= "sunrise"/>
+            </div>
+            <div class = "right">
+                <h2>Sunset</h2>
+                <div class = "sunset"></div>
+                <img src= "./icons/sunset.png" alt= "sunset"/>
+            </div>
+        </div>
+    </div>
+    <div class = "main">
+        <div class = "mainContainer">
+            <div class = "search">
+                <input type= "text" class= "searchBar" placeholder = "Search">
+                <button><iconify-icon icon= "heroicons:magnifying-glass"></iconify-icon></button>
+            </div>
+            <div class = "weather">
+                <h2 class = "city"></h2>
+                <h3 class = "time"></h3>
+                <div class = "flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt= "" class= "icon"/>
+                    <div class = "description"></div>
+                </div>
+                <h1 class = "temp"></h1>
+                <div class = "humidity"></div>
+                <div class = "speed"></div>
+            </div>
+        </div>
+    </div>
+    <legend>Created by frank206 <a href="https://github.com/frank206"><img src="./icons/GitHub-Mark-Light-32px.png" alt="github" height="18px"></a></legend>
+
+<script src="script.js" charset="UTF-8"></script>
+
+
+</body>
+</html>
