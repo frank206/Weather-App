@@ -1,6 +1,6 @@
 let weather = {
     fetchWeather: function (location) {
-      fetch("http://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=e7e979ec86d11d63b4bceafd2d42cea1&units=imperial", {mode:'cors'})
+      fetch("https://api.openweathermap.org/data/2.5/weather?q=" + location + "&appid=e7e979ec86d11d63b4bceafd2d42cea1&units=imperial", {mode:'cors'})
         .then((response) => {
             if(!response.ok){
                 alert("No weather found.");
